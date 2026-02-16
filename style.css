@@ -333,7 +333,7 @@ nav {
   bottom: 0;
   right: 50px;
   width: 70%;
-  opacity: 20%;
+  opacity: 0.2;
   pointer-events: none;
   z-index: 0;
 }
@@ -972,3 +972,4 @@ footer {
     animation: none;
   }
 }
+
