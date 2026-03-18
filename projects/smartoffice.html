@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Office IoT System - Dzaki Al Faridzi</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<div class="container">
+
+<nav>
+
+<a href="../index.html#home" class="logo">DA</a>
+
+<div class="nav-links">
+<a href="../index.html#home" class="nav-link">Beranda</a>
+<a href="../index.html#about" class="nav-link">Tentang</a>
+<a href="../index.html#skills" class="nav-link">Keahlian</a>
+<a href="../index.html#experience" class="nav-link">Pengalaman</a>
+<a href="../index.html#projects" class="nav-link active">Projek</a>
+</div>
+
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</nav>
+
+</div>
+</header>
+
+
+<main>
+
+<section class="project-detail-section">
+
+<div class="container">
+
+<a href="../index.html#projects" class="back-button">
+<i class="fas fa-arrow-left"></i> Kembali ke Projek
+</a>
+
+
+<div class="project-detail-container">
+
+
+<!-- TITLE -->
+<div class="project-detail-header">
+
+<h1 class="project-detail-title">
+Smart Office IoT System
+</h1>
+
+<div class="project-detail-meta">
+
+<div class="meta-item">
+<i class="fas fa-folder"></i>
+<span class="meta-label">Kategori:</span>
+<span class="meta-value">IoT Automation</span>
+</div>
+
+<div class="meta-item">
+<i class="fas fa-calendar"></i>
+<span class="meta-label">Tahun:</span>
+<span class="meta-value">2025</span>
+</div>
+
+<div class="meta-item">
+<i class="fas fa-signal"></i>
+<span class="meta-label">Tingkat:</span>
+<span class="difficulty-badge intermediate">Menengah</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- GRID -->
+<div class="project-detail-grid">
+
+
+<!-- IMAGE -->
+<div class="project-gallery">
+
+<img
+src="../assets/images/smartoffice.png"
+class="main-image"
+alt="Smart Office System"
+/>
+
+</div>
+
+
+<!-- QUICK INFO -->
+<div class="project-quick-info">
+
+
+<div class="info-section">
+
+<h3>
+<i class="fas fa-microchip"></i>
+Komponen Utama
+</h3>
+
+<div class="components-list">
+
+<span class="component-item">
+<i class="fas fa-microchip"></i> ESP32
+</span>
+
+<span class="component-item">
+<i class="fas fa-eye"></i> Sensor PIR
+</span>
+
+<span class="component-item">
+<i class="fas fa-thermometer-half"></i> Sensor Suhu DHT
+</span>
+
+<span class="component-item">
+<i class="fas fa-toggle-on"></i> Relay Module
+</span>
+
+<span class="component-item">
+<i class="fas fa-volume-up"></i> Buzzer
+</span>
+
+<span class="component-item">
+<i class="fas fa-lightbulb"></i> Lampu
+</span>
+
+<span class="component-item">
+<i class="fas fa-fan"></i> Kipas
+</span>
+
+</div>
+
+</div>
+
+
+<div class="info-section">
+
+<h3>
+<i class="fas fa-chart-bar"></i>
+Fitur Sistem
+</h3>
+
+<ul class="spec-list">
+
+<li>
+<span class="spec-label">Monitoring</span>
+<span class="spec-value">Suhu ruangan</span>
+</li>
+
+
+<li>
+<span class="spec-label">Kontrol</span>
+<span class="spec-value">Lampu otomatis</span>
+</li>
+
+<li>
+<span class="spec-label">Kontrol</span>
+<span class="spec-value">Kipas berdasarkan suhu</span>
+</li>
+
+<li>
+<span class="spec-label">Notifikasi</span>
+<span class="spec-value">Buzzer alarm</span>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- DESCRIPTION -->
+<div class="project-description-full">
+
+
+<div class="description-section">
+
+<h2>
+<i class="fas fa-info-circle"></i>
+Deskripsi Sistem
+</h2>
+
+<p>
+Smart Office adalah sistem otomatisasi ruangan berbasis Internet of Things (IoT) yang dirancang untuk meningkatkan efisiensi energi serta kenyamanan dalam ruang kerja. Sistem ini memanfaatkan berbagai sensor untuk memonitor kondisi lingkungan dan mengontrol perangkat elektronik secara otomatis.
+</p>
+
+<p>
+Dengan menggunakan mikrokontroler ESP32, sistem mampu membaca data dari sensor seperti sensor gerakan dan sensor suhu, kemudian memproses data tersebut untuk mengaktifkan perangkat seperti lampu, kipas, maupun buzzer.
+</p>
+
+</div>
+
+
+<div class="description-section">
+
+<h2>
+<i class="fas fa-cogs"></i>
+Cara Kerja Sistem
+</h2>
+
+<p>
+Sensor PIR digunakan untuk mendeteksi keberadaan manusia di dalam ruangan. Ketika sensor mendeteksi gerakan, sistem akan mengaktifkan lampu secara otomatis sehingga ruangan menjadi terang.
+</p>
+
+<p>
+Sensor suhu akan membaca temperatur ruangan secara berkala. Jika suhu melebihi batas tertentu, sistem akan menyalakan kipas untuk menjaga kenyamanan ruangan.
+</p>
+
+<p>
+Buzzer digunakan sebagai indikator sistem aktif atau sebagai notifikasi ketika terjadi kondisi tertentu pada sistem.
+</p>
+
+</div>
+
+
+<div class="description-section">
+
+<h2>
+<i class="fas fa-project-diagram"></i>
+Alur Sistem
+</h2>
+
+<ul>
+
+<p>Sensor membaca kondisi lingkungan</p>
+<p>Data dikirim ke mikrokontroler ESP32</p>
+<p>ESP32 memproses logika sistem</p>
+<p>Output diaktifkan (lampu, kipas, buzzer)</p>
+
+</ul>
+
+</div>
+
+
+<div class="description-section">
+
+<h2>
+<i class="fas fa-flag-checkered"></i>
+Tujuan Proyek
+</h2>
+
+<p>
+Proyek ini dibuat untuk mempelajari implementasi sistem IoT dalam otomatisasi ruangan. Selain itu, sistem ini juga bertujuan untuk meningkatkan efisiensi penggunaan energi listrik dengan mengontrol perangkat secara otomatis berdasarkan kondisi lingkungan.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+<div class="container">
+
+<div class="footer-content">
+<p>© 2026 Dzaki Al Faridzi</p>
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- MAIN JS -->
+<script src="../main.js"></script>
+
+</body>
+</html>

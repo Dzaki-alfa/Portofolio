@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecHome Smart Home - Dzaki Al Faridzi</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+  rel="stylesheet"/>
+
+  <!-- Prism -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"/>
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <nav>
+
+      <a href="../index.html#home" class="logo">DA</a>
+
+      <div class="nav-links">
+        <a href="../index.html#home" class="nav-link">Beranda</a>
+        <a href="../index.html#about" class="nav-link">Tentang</a>
+        <a href="../index.html#skills" class="nav-link">Keahlian</a>
+        <a href="../index.html#experience" class="nav-link">Pengalaman</a>
+        <a href="../index.html#projects" class="nav-link active">Projek</a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+<section class="project-detail-section">
+
+<div class="container">
+
+<a href="../index.html#projects" class="back-button">
+<i class="fas fa-arrow-left"></i> Kembali ke Projek
+</a>
+
+<div class="project-detail-container">
+
+<!-- HEADER PROJECT -->
+<div class="project-detail-header">
+
+<h1 class="project-detail-title">TecHome Smart Home System</h1>
+
+<div class="project-detail-meta">
+
+<div class="meta-item">
+<i class="fas fa-folder"></i>
+<span class="meta-label">Kategori:</span>
+<span class="meta-value">IoT / Smart Home</span>
+</div>
+
+<div class="meta-item">
+<i class="fas fa-calendar"></i>
+<span class="meta-label">Tahun:</span>
+<span class="meta-value">2025</span>
+</div>
+
+<div class="meta-item">
+<i class="fas fa-clock"></i>
+<span class="meta-label">Durasi:</span>
+<span class="meta-value">3 bulan</span>
+</div>
+
+<div class="meta-item">
+<i class="fas fa-signal"></i>
+<span class="meta-label">Tingkat:</span>
+<span class="difficulty-badge intermediate">Menengah</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- GRID -->
+<div class="project-detail-grid">
+
+<!-- IMAGE -->
+<div class="project-gallery">
+<img src="../assets/images/techome.png"
+class="main-image"
+alt="TecHome Smart Home"/>
+</div>
+
+
+<!-- QUICK INFO -->
+<div class="project-quick-info">
+
+<div class="info-section">
+
+<h3>
+<i class="fas fa-microchip"></i>
+Komponen Utama
+</h3>
+
+<div class="components-list">
+
+<span class="component-item">
+<i class="fas fa-microchip"></i> ESP32 DevKit V1
+</span>
+
+<span class="component-item">
+<i class="fas fa-thermometer-half"></i> Sensor DHT11
+</span>
+
+<span class="component-item">
+<i class="fas fa-fire"></i> Sensor Gas MQ2
+</span>
+
+<span class="component-item">
+<i class="fas fa-toggle-on"></i> Relay 10 Channel
+</span>
+
+<span class="component-item">
+<i class="fas fa-volume-up"></i> Buzzer Alarm
+</span>
+
+<span class="component-item">
+<i class="fas fa-bolt"></i> Power Supply 24V
+</span>
+
+</div>
+</div>
+
+
+<div class="info-section">
+
+<h3>
+<i class="fas fa-chart-bar"></i>
+Spesifikasi Sistem
+</h3>
+
+<ul class="spec-list">
+
+<li>
+<span class="spec-label">Controller</span>
+<span class="spec-value">ESP32 DevKit V1</span>
+</li>
+
+<li>
+<span class="spec-label">Koneksi</span>
+<span class="spec-value">WiFi IoT</span>
+</li>
+
+<li>
+<span class="spec-label">Sensor</span>
+<span class="spec-value">DHT11 & MQ2</span>
+</li>
+
+<li>
+<span class="spec-label">Control</span>
+<span class="spec-value">Web Dashboard & Mobile</span>
+</li>
+
+</ul>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- DESCRIPTION -->
+<div class="project-description-full">
+
+<div class="description-section">
+
+<h2>
+<i class="fas fa-info-circle"></i>
+Deskripsi Proyek
+</h2>
+
+<p>
+TecHome merupakan sistem Smart Home berbasis Internet of Things (IoT)
+yang dirancang untuk mengontrol serta memantau berbagai perangkat rumah
+secara otomatis dan real-time. Sistem ini menggunakan ESP32 sebagai
+mikrokontroler utama yang terhubung ke jaringan internet sehingga
+perangkat dapat dikontrol dari jarak jauh melalui web dashboard
+maupun aplikasi mobile.
+</p>
+
+<p>
+TecHome mengintegrasikan sensor suhu, kelembapan, serta sensor
+deteksi gas untuk meningkatkan kenyamanan dan keamanan rumah.
+Data sensor dikirim ke database MySQL melalui komunikasi HTTP,
+kemudian ditampilkan pada dashboard monitoring secara real-time.
+</p>
+
+</div>
+
+
+<div class="description-section">
+
+<h2>
+<i class="fas fa-lightbulb"></i>
+Tujuan Sistem
+</h2>
+
+<p>
+Tujuan utama dari pengembangan TecHome adalah menghadirkan sistem
+rumah pintar yang mampu meningkatkan efisiensi energi, keamanan,
+dan kenyamanan penghuni rumah. Dengan integrasi sensor dan
+otomatisasi perangkat, pengguna dapat memantau kondisi rumah
+secara langsung serta mengendalikan perangkat elektronik dari
+mana saja.
+</p>
+
+</div>
+
+
+
+<div class="description-section">
+
+<h2>
+<i class="fas fa-star"></i>
+Fitur Utama
+</h2>
+
+<div class="features-grid">
+
+<div class="feature-item">
+<i class="fas fa-house"></i>
+<div class="feature-text">
+<h4>Smart Home Automation</h4>
+<p>Mengontrol perangkat rumah melalui web atau aplikasi.</p>
+</div>
+</div>
+
+<div class="feature-item">
+<i class="fas fa-temperature-high"></i>
+<div class="feature-text">
+<h4>Monitoring Suhu</h4>
+<p>Sensor DHT11 membaca suhu dan kelembapan secara real-time.</p>
+</div>
+</div>
+
+<div class="feature-item">
+<i class="fas fa-fire"></i>
+<div class="feature-text">
+<h4>Deteksi Gas Berbahaya</h4>
+<p>Sensor MQ2 mendeteksi gas seperti LPG dan asap.</p>
+</div>
+</div>
+
+<div class="feature-item">
+<i class="fas fa-bell"></i>
+<div class="feature-text">
+<h4>Sistem Alarm</h4>
+<p>Buzzer aktif otomatis saat terdeteksi gas berbahaya.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- SOURCE CODE -->
+<div class="description-section">
+
+<h2>
+<i class="fas fa-code"></i>
+Contoh Program ESP32
+</h2>
+
+<div class="code-block">
+
+<button class="copy-code-btn" onclick="copyCode(this)">
+Salin Kode
+</button>
+
+<pre><code class="language-cpp">
+
+#include < WiFi.h>
+#include < WiFiClientSecure.h>
+#include < HTTPClient.h>
+#include < ArduinoJson.h>
+#include < PZEM004Tv30.h>
+#include < DHT.h>
+
+const char* ssid = "TEKNOLAB Office";
+const char* password = "selamatdatang";
+const char* serverName = "https://techome.web.id/simpan.php";
+const char* getURL = "https://techome.web.id/get_relay_status.php";
+
+PZEM004Tv30 pzem(Serial2, 16, 17); // RX2, TX2
+
+#define BUZZER_PIN 25
+#define DHTPIN 19
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
+
+#define MQ2_PIN 36
+int gasValue = 0;
+int relayPins[10] = {23, 22, 32, 33, 5, 26, 27, 14, 21, 13};
+
+WiFiClientSecure client;
+
+void setup() {
+  Serial.begin(115200);
+
+  for (int i = 0; i < 10; i++) {
+    pinMode(relayPins[i], OUTPUT);
+  }
+
+  pinMode(BUZZER_PIN, OUTPUT);
+  digitalWrite(BUZZER_PIN, LOW);
+
+  WiFi.begin(ssid, password);
+  Serial.print("Menghubungkan ke WiFi");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("\nTerhubung ke WiFi!");
+
+  // sertifikat SSL
+  client.setInsecure();
+
+  dht.begin();
+  Serial2.begin(9600, SERIAL_8N1, 16, 17);
+
+  Serial.println("Monitoring Sensor Dimulai...");
+}
+
+void loop() {
+  if (WiFi.status() == WL_CONNECTED) {
+
+    float voltage = pzem.voltage();
+    float current = pzem.current();
+    float power   = pzem.power();
+    float energy  = pzem.energy();
+
+    float suhu = dht.readTemperature();
+    float kelembaban = dht.readHumidity();
+    gasValue = analogRead(MQ2_PIN);
+
+    if (isnan(voltage))    voltage = 0;
+    if (isnan(current))    current = 0;
+    if (isnan(power))      power   = 0;
+    if (isnan(energy))     energy  = 0;
+    if (isnan(suhu))       suhu    = 0;
+    if (isnan(kelembaban)) kelembaban = 0;
+    if (gasValue < 0)      gasValue = 0;
+
+    Serial.println("Data Sekarang:");
+    Serial.print("Tegangan   : "); Serial.println(voltage);
+    Serial.print("Arus       : "); Serial.println(current);
+    Serial.print("Daya       : "); Serial.println(power);
+    Serial.print("Energi     : "); Serial.println(energy);
+    Serial.print("Suhu       : "); Serial.println(suhu);
+    Serial.print("Kelembaban : "); Serial.println(kelembaban);
+    Serial.print("Gas        : "); Serial.println(gasValue);
+
+    // Buzzer
+    if (gasValue > 1000) {
+      digitalWrite(BUZZER_PIN, HIGH);
+      Serial.println("Peringatan! Suhu tinggi atau gas berlebih!!!");
+    } else {
+      digitalWrite(BUZZER_PIN, LOW);
+    }
+
+    HTTPClient https;
+    https.begin(client, serverName);
+    https.addHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    String postData = "tegangan=" + String(voltage) +
+                      "&arus=" + String(current) +
+                      "&daya=" + String(power) +
+                      "&energi=" + String(energy) +
+                      "&suhu=" + String(suhu) +
+                      "&kelembaban=" + String(kelembaban) +
+                      "&gas=" + String(gasValue);
+
+    int httpResponseCode = https.POST(postData);
+
+    if (httpResponseCode > 0) {
+      Serial.print("Data terkirim, kode respons: ");
+      Serial.println(httpResponseCode);
+    } else {
+      Serial.print("Gagal kirim data, error: ");
+      Serial.println(httpResponseCode);
+    }
+    https.end();
+
+    HTTPClient httpsRelay;
+    httpsRelay.begin(client, getURL);
+    int httpCode = httpsRelay.GET();
+
+    if (httpCode == 200) {
+      String payload = httpsRelay.getString();
+      Serial.println("Data dari server: " + payload);
+
+      StaticJsonDocument<256> doc;
+      DeserializationError error = deserializeJson(doc, payload);
+
+      if (!error) {
+        for (int i = 1; i <= 10; i++) {
+          String key = "relay" + String(i);
+          int state = doc[key];
+          digitalWrite(relayPins[i - 1], state == 1 ? LOW : HIGH);
+        }
+      } else {
+        Serial.println("JSON parse error");
+      }
+    } else {
+      Serial.println("Gagal ambil status relay, kode: " + String(httpCode));
+    }
+
+    httpsRelay.end();
+
+  } else {
+    Serial.println("WiFi terputus, mencoba reconnect...");
+    WiFi.begin(ssid, password);
+  }
+
+  delay(2000);
+}
+
+
+
+</code></pre>
+
+</div>
+
+</div>
+
+
+<div class="project-links">
+
+<a href="#" class="project-link-btn primary">
+<i class="fab fa-github"></i>
+Lihat di GitHub
+</a>
+
+<a href="#" class="project-link-btn secondary">
+<i class="fas fa-play"></i>
+Video Demo
+</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<div class="footer-content">
+
+<p>
+© 2026 Dzaki Al Faridzi
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="../main.js"></script>
+
+</body>
+</html>

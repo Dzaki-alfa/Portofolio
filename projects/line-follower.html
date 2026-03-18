@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Robot Line Follower - Dzaki Al Faridzi</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prism Code Highlight -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="../index.html#home" class="logo">DA</a>
+
+          <div class="nav-links">
+            <a href="../index.html#home" class="nav-link">Beranda</a>
+            <a href="../index.html#about" class="nav-link">Tentang</a>
+            <a href="../index.html#skills" class="nav-link">Keahlian</a>
+            <a href="../index.html#experience" class="nav-link">Pengalaman</a>
+            <a href="../index.html#projects" class="nav-link active">Projek</a>
+          </div>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-detail-section">
+        <div class="container">
+          <a href="../index.html#projects" class="back-button">
+            <i class="fas fa-arrow-left"></i> Kembali ke Projek
+          </a>
+
+          <div class="project-detail-container">
+            <!-- TITLE -->
+            <div class="project-detail-header">
+              <h1 class="project-detail-title">Robot Line Follower</h1>
+
+              <div class="project-detail-meta">
+                <div class="meta-item">
+                  <i class="fas fa-folder"></i>
+                  <span class="meta-label">Kategori:</span>
+                  <span class="meta-value">Robotics</span>
+                </div>
+
+                <div class="meta-item">
+                  <i class="fas fa-calendar"></i>
+                  <span class="meta-label">Tahun:</span>
+                  <span class="meta-value">2026</span>
+                </div>
+
+                <div class="meta-item">
+                  <i class="fas fa-clock"></i>
+                  <span class="meta-label">Durasi:</span>
+                  <span class="meta-value">1 bulan</span>
+                </div>
+
+                <div class="meta-item">
+                  <i class="fas fa-signal"></i>
+                  <span class="meta-label">Tingkat:</span>
+                  <span class="difficulty-badge intermediate">Menengah</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- GRID -->
+            <div class="project-detail-grid">
+              <!-- IMAGE -->
+              <div class="project-gallery">
+                <img
+                  src="../assets/images/linefollower.png"
+                  class="main-image"
+                  alt="Robot Line Follower"
+                />
+              </div>
+
+              <!-- QUICK INFO -->
+              <div class="project-quick-info">
+                <div class="info-section">
+                  <h3>
+                    <i class="fas fa-microchip"></i>
+                    Komponen Utama
+                  </h3>
+
+                  <div class="components-list">
+                    <span class="component-item">
+                      <i class="fas fa-microchip"></i> Arduino Nano
+                    </span>
+
+                    <span class="component-item">
+                      <i class="fas fa-eye"></i> Sensor IR (5)
+                    </span>
+
+                    <span class="component-item">
+                      <i class="fas fa-motor"></i> Motor DC
+                    </span>
+
+                    <span class="component-item">
+                      <i class="fas fa-cogs"></i> Driver L298N
+                    </span>
+
+                    <span class="component-item">
+                      <i class="fas fa-battery-full"></i> Baterai LiPo
+                    </span>
+                  </div>
+                </div>
+
+                <div class="info-section">
+                  <h3>
+                    <i class="fas fa-chart-bar"></i>
+                    Spesifikasi
+                  </h3>
+
+                  <ul class="spec-list">
+                    <li>
+                      <span class="spec-label">Dimensi</span>
+                      <span class="spec-value">15cm x 12cm x 8cm</span>
+                    </li>
+
+                    <li>
+                      <span class="spec-label">Berat</span>
+                      <span class="spec-value">350 gram</span>
+                    </li>
+
+                    <li>
+                      <span class="spec-label">Kecepatan</span>
+                      <span class="spec-value">0.5 m/s</span>
+                    </li>
+
+                    <li>
+                      <span class="spec-label">Waktu Operasi</span>
+                      <span class="spec-value">45 menit</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESCRIPTION -->
+            <div class="project-description-full">
+              <div class="description-section">
+                <h2>
+                  <i class="fas fa-info-circle"></i>
+                  Deskripsi Proyek
+                </h2>
+
+                <p>
+                  Robot Line Follower adalah robot otonom yang dirancang untuk
+                  mengikuti garis hitam di atas permukaan putih. Sistem
+                  menggunakan sensor inframerah untuk mendeteksi garis dan
+                  mikrokontroler Arduino Nano sebagai pengendali utama.
+                </p>
+              </div>
+
+              <div class="description-section">
+                <h2>
+                  <i class="fas fa-lightbulb"></i>
+                  Latar Belakang
+                </h2>
+
+                <p>
+                  Proyek ini dikembangkan untuk mempelajari sistem kontrol PID
+                  dan pemrograman embedded system. Robot dirancang agar stabil
+                  saat berjalan lurus maupun saat menghadapi tikungan tajam.
+                </p>
+              </div>
+
+              <div class="description-section">
+                <h2>
+                  <i class="fas fa-exclamation-triangle"></i>
+                  Tantangan
+                </h2>
+
+                <p>
+                  Tantangan utama dalam proyek ini adalah melakukan tuning
+                  parameter PID agar robot tidak mengalami overshoot saat
+                  melewati tikungan serta menjaga kestabilan navigasi.
+                </p>
+              </div>
+
+              <!-- FEATURES -->
+              <div class="description-section">
+                <h2>
+                  <i class="fas fa-star"></i>
+                  Fitur Utama
+                </h2>
+
+                <div class="features-grid">
+                  <div class="feature-item">
+                    <i class="fas fa-gauge-high"></i>
+
+                    <div class="feature-text">
+                      <h4>Kecepatan Variabel</h4>
+                      <p>PID mengatur kecepatan motor secara real-time.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fas fa-arrows-spin"></i>
+
+                    <div class="feature-text">
+                      <h4>Navigasi Presisi</h4>
+                      <p>Mampu mengikuti tikungan dengan akurasi tinggi.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fas fa-microchip"></i>
+
+                    <div class="feature-text">
+                      <h4>Arduino Nano</h4>
+                      <p>Mikrokontroler efisien dan mudah diprogram.</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fas fa-bolt"></i>
+
+                    <div class="feature-text">
+                      <h4>Low Power</h4>
+                      <p>Konsumsi daya optimal untuk penggunaan lama.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CODE -->
+              <div class="description-section">
+                <h2>
+                  <i class="fas fa-code"></i>
+                  Source Code
+                </h2>
+
+                <div class="code-block">
+                  <button class="copy-code-btn" onclick="copyCode(this)">
+                    Salin Kode
+                  </button>
+
+                  <pre><code class="language-cpp">
+
+int ENB = 9; // Speed motor kiri
+int majuB = 6; // Arah maju motor kiri
+int mundurB = 7; // Arah mundur motor kiri
+
+int ENA = 3; // Speed  motor kanan
+int majuA = 4; //Arah maju motor kanan
+int mundurA = 5; // Arah mundur motor kanan
+
+int pb = 2;
+
+int sensor1 = A0; // Sensor kiri luar
+int sensor2 = A1; // Snensor kiri dalam
+int sensor3 = A2; // Sensor tengah
+int sensor4 = A3; // Sensor kanan dalam
+int sensor5 = A4; // Sensor kanan luar
+
+#define Sensor1 digitalRead(sensor1) // Makro
+#define Sensor2 digitalRead(sensor2) // Makro
+#define Sensor3 digitalRead(sensor3) // Makro
+#define Sensor4 digitalRead(sensor4) // Makro
+#define Sensor5 digitalRead(sensor5) // Makro
+
+bool sistemNyala = false;
+bool tombolTerakhir = LOW;
+
+void setup() {
+  pinMode(sensor1, INPUT); // Deklarasi  sensor mode INPUT
+  pinMode(sensor2, INPUT); // Deklarasi  sensor mode INPUT
+  pinMode(sensor3, INPUT); // Deklarasi  sensor mode INPUT
+  pinMode(sensor4, INPUT); // Deklarasi  sensor mode INPUT
+  pinMode(sensor5, INPUT); // Deklarasi  sensor mode INPUT
+
+  pinMode(ENA, OUTPUT); // Deklarasi  kecepatan motorA mode OUTPUT
+  pinMode(mundurA, OUTPUT); // Deklarasi arah motorA mode OUTPUT
+  pinMode(majuA, OUTPUT); // Deklarasi arah motorA mode OUTPUT
+
+  pinMode(ENB, OUTPUT); // Deklarasi  kecepatan motorB mode OUTPUT
+  pinMode(mundurB, OUTPUT);  // Deklarasi arah motorA mode OUTPUT
+  pinMode(majuB, OUTPUT);  // Deklarasi arah motorA mode OUTPUT
+
+  pinMode(pb, INPUT);
+  
+  analogWrite(ENB, 150); // Kecepatan maju motorB
+  analogWrite(ENA, 150); // Kecepatan maju motorA
+}
+
+void loop() {
+
+  bool tombol = digitalRead(pb);
+
+  // Deteksi tekan tombol (LOW → HIGH)
+  if (tombolTerakhir == LOW && tombol == HIGH) {
+    sistemNyala = !sistemNyala; // toggle ON / OFF
+    delay(200); // debounce sederhana
+  }
+
+  tombolTerakhir = tombol;
+
+  // JIKA SISTEM MATI
+  if (!sistemNyala) {
+    analogWrite(ENA, 0);
+    analogWrite(ENB, 0);
+    return;
+  }
+
+  digitalWrite(majuB, HIGH); // Setup arah maju motorB
+  digitalWrite(majuA, HIGH); // Setup arah maju motorA
+  digitalWrite(mundurB, LOW);
+  digitalWrite(mundurA, LOW);
+
+//  Masuk logika IF per sensor
+  if(Sensor3 == HIGH) {
+    analogWrite(ENB, 150);
+    analogWrite(ENA, 150);
+  }else if(Sensor1 == HIGH){
+    analogWrite(ENB, 50);
+    analogWrite(ENA, 150);
+  }else if(Sensor2 == HIGH){
+    analogWrite(ENB, 90);
+    analogWrite(ENA, 150);
+  }else if(Sensor4 == HIGH){
+    analogWrite(ENB, 150);
+    analogWrite(ENA, 90);
+  }else if(Sensor5 == HIGH){
+    analogWrite(ENB, 150);
+    analogWrite(ENA, 50);
+  }
+
+  // Logika jika sensor LOW semua, motor akan mundur
+  if (Sensor1 == LOW && Sensor2 == LOW && Sensor3 == LOW && Sensor4 == LOW && Sensor5 == LOW) {
+    analogWrite(ENB, 0);
+    analogWrite(ENA, 0);
+  }
+  
+}
+
+
+</code></pre>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>© 2026 Dzaki Al Faridzi</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- PRISM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="../main.js"></script>
+  </body>
+</html>
